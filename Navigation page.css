@@ -1,0 +1,91 @@
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Change style on hover */
+nav ul li a:hover {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Scrolled Navbar background change */
+.scrolled {
+  background-color: #333;
+}
+
+.scrolled nav ul li a {
+  color: white;
+}
+
+.scrolled nav ul li a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Content sections */
+section {
+  padding: 100px 20px;
+  height: 100vh;
+}
+
+#home {
+  background-color: #f0f0f0;
+}
+
+#about {
+  background-color: #e0e0e0;
+}
+
+#services {
+  background-color: #d0d0d0;
+}
+
+#contact {
+  background-color: #c0c0c0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 1rem 2rem;
+  }
+}
